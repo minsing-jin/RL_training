@@ -5,5 +5,14 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "gymnasium>=1.2.0",
+    "ale-py>=0.11.2",
+    "cv>=1.0.0",
+    "gymnasium[accept-rom-license,ale,atari,classic-control]>=1.2.0",
+    "keras>=3.11.1",
+    "matplotlib>=3.10.5",
+    "numpy>=2.1.3",
+    "opencv-python>=4.12.0.88",
+    "tensorflow>=2.19.0",
+    "torch>=2.8.0",
+    "tqdm>=4.67.1",
 ]
