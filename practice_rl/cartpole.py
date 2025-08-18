@@ -32,7 +32,7 @@ if __name__ == '__main__':
 
         total_reward += reward
         episode_over = terminated or truncated
-        time.sleep(0.02)  # Slow down the loop for better visualization
+        time.sleep(0.10)  # Slow down the loop for better visualization
 
     print(f"Episode finished! Total reward: {total_reward}")
     env.close()

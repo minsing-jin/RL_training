@@ -211,8 +211,8 @@ def train_dqn():
     agent = DQNAgent(state_shape, n_actions)
 
     # 학습 파라미터
-    n_episodes = 2000
-    max_steps_per_episode = 10000
+    n_episodes = 100000
+    max_steps_per_episode = 100000
     train_frequency = 4
     save_frequency = 100
 
@@ -382,15 +382,15 @@ def plot_training_results(scores, window_size=100):
 # 학습 실행
 # TODO: 바이크코딩 딸깍 ㅋㅋㅋㅋ, Is it right the factor I can improve is only the hyperparameters such as episode?
 if __name__ == "__main__":
-    agent, scores = train_dqn()
-
-    # 점수 그래프 그리기
-    import matplotlib.pyplot as plt
-
-    plt.figure(figsize=(12, 6))
-    plt.plot(scores)
-    plt.title('DQN Training Scores')
-    plt.xlabel('Episode')
-    plt.ylabel('Score')
-    plt.show()
-    test_scores = simulate_trained_agent("dqn_model_episode_1000.pth")
+    # agent, scores = train_dqn()
+    #
+    # # 점수 그래프 그리기
+    # import matplotlib.pyplot as plt
+    #
+    # plt.figure(figsize=(12, 6))
+    # plt.plot(scores)
+    # plt.title('DQN Training Scores')
+    # plt.xlabel('Episode')
+    # plt.ylabel('Score')
+    # plt.show()
+    test_scores = simulate_trained_agent("./agent/atari/dqn_model_episode_11000.pth")
